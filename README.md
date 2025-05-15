@@ -25,7 +25,7 @@ npm run dev
 
 ## Explanation
 
-In portfolio there are this methods:
+In portfolio there are the following methods:
 
 - `validateDistribution`: Allows to check if the distribution map has values that sum 1. If so, the method response is true.
 - `validate`: Iterates over the stock elements and prints information about them, the quantity and the total money in that stock. Finishes checking if the portfolio distribution is valid. Prints that information to console.log
@@ -36,3 +36,8 @@ In portfolio there are this methods:
     - if the final quantity is greater than the original, we must buy, we send the difference to console.log
     - if the final quantity is less than the original, we must sell, we send the difference to console.log
   - finally we iterate over the stock map to check stocks that are not in the distribution, and send the information that we must sell them to the console.log
+
+In the main file there are three cases:
+-  The first one contains two stocks and their distribution, and outputs the rebalanced quantity to sell or buy for each stock
+-  The second one has a third stock that is not in the distribution, and outputs the rebalanced quantity, and to sell of of that stock
+-  The third one has fewer stocks that are not in the distribution, and we output an error, because we don't have the stock price to see how much do we need to buy 
