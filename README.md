@@ -22,3 +22,17 @@ You need to have node and npm installed, then execute:
 npm install
 npm run dev
 ```
+
+## Explanation
+
+In portfolio there are this methods:
+
+- `validateDistribution`: Allows to check if the distribution map has values that sum 1. If so, the method response is true.
+- `validate`: Iterates over the stock elements and prints information about them, the quantity and the total money in that stock. Finishes checking if the portfolio distribution is valid. Prints that information to console.log
+- `rebalance`: Has the logic that rebalances the portfolio according to the distribution, to do that, we:
+  - first check the total amount in the portfolio
+  - then distributes that money according to the distribution map
+  - and then, iterates over the same distribution map to get the final quantity of stocks that needs to have to fill the distribution
+    - if the final quantity is greater than the original, we must buy, we send the difference to console.log
+    - if the final quantity is less than the original, we must sell, we send the difference to console.log
+  - finally we iterate over the stock map to check stocks that are not in the distribution, and send the information that we must sell them to the console.log
