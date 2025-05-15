@@ -66,3 +66,7 @@ console.log(`End of first case\n\n`)
 console.log(`Second case: APPL and META 40/60 with stocks and GOGL stocks that are not in the distribution`)
 secondCase();
 console.log(`End of second case\n\n`)
+
+console.log(`Third case: APPL and FINT 40/60, we don't have FINT stocks so the logic must show an error`)
+thirdCase();
+console.log(`End of third case\n\n`)
