@@ -14,6 +14,9 @@ For this solution:
 - I'm using a different data structure to allow the portfolio to have stocks that are not in the distribution, and when the rebalance method is used, most of them should be sold. 
 - The case in which a distribution code is not within the stocks is not allowed and should throw an exception (because I don't know the currentPrice).
 
+## Running the code
+
+You need to have node and npm installed, then execute:
 
 ```
 npm install

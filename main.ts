@@ -18,5 +18,30 @@ function firstCase() {
     portfolio.rebalance();
 }
 
+function secondCase() {
+    const stock1 = new Stock("APPL", 1500, 200);
+    const stock2 = new Stock("META", 2500, 400);
+    const stock3 = new Stock("GOGL", 4000, 100);
+    
 
+    const portfolio = new Portfolio({
+        "APPL": 0.4,
+        "META": 0.6,
+    });
+
+    portfolio.addStock(stock1);
+    portfolio.addStock(stock2);
+    portfolio.addStock(stock3);
+
+    portfolio.validate();
+
+    portfolio.rebalance();
+}
+
+console.log(`First case: APPL and META 40/60 with stocks`)
 firstCase();
+console.log(`End of first case`)
+
+console.log(`Second case: APPL and META 40/60 with stocks and GOGL stocks that are not in the distribution`)
+secondCase();
+console.log(`End of second case`)
