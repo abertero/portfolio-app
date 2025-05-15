@@ -40,8 +40,8 @@ function secondCase() {
 
 console.log(`First case: APPL and META 40/60 with stocks`)
 firstCase();
-console.log(`End of first case`)
+console.log(`End of first case\n\n`)
 
 console.log(`Second case: APPL and META 40/60 with stocks and GOGL stocks that are not in the distribution`)
 secondCase();
-console.log(`End of second case`)
+console.log(`End of second case\n\n`)
