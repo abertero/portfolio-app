@@ -16,5 +16,6 @@ For this solution:
 
 
 ```
-npm install -g ts-node typescript
+npm install
+npm run dev
 ```

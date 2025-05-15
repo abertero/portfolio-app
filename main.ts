@@ -10,11 +10,13 @@ function firstCase() {
         "META": 0.6,
     });
 
-    if (portfolio.validateDistribution()) {
-        console.log("Valid distribution");
-    } else {
-        console.log("Invalid distribution");
-    }
+    portfolio.addStock(stock1);
+    portfolio.addStock(stock2);
+
+    portfolio.validate();
+
+    portfolio.rebalance();
 }
+
 
 firstCase();
